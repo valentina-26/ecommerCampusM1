@@ -1,0 +1,39 @@
+:root{
+    --color-1: #8E1F4C;
+    --color-2: #1B2028;
+    --color-3: #A4AAAD;
+    --color-4: #fff6ed;
+    --color-5: #FFFFFF;
+    --color-6: #EEEEEE;
+    /* --color-7: #000000; */
+    --space-layout-padding-lr:10px;
+    --space-layout-padding-t:5px;
+    --layout-img-wigth:100%;
+    --layout-img-height:350px;
+}
+@font-face {
+    font-family: "EnecodeSans-Regular";
+    src: url("../storage/font/encode-sans/EncodeSans-Regular.ttf");
+}
+@font-face {
+    font-family: "EncodeSans-Medium";
+    src: url("../storage/font/encode-sans/EncodeSans-Medium.ttf");
+}
+@font-face {
+    font-family: "EncodeSans-SemiBold";
+    src: url("../storage/font/encode-sans/EncodeSans-SemiBold.ttf");
+}
+@font-face {
+    font-family: "EncodeSans-Bold";
+    src: url("../storage/font/encode-sans/EncodeSans-Bold.ttf");
+}
+
+@font-face {
+    font-family: "NotoSerif";
+    src: url(/storage/font/NotoSerif.ttf);
+}
+
+@font-face {
+    font-family:"Sedan-Regular";
+    src: url(/storage/font/Sedan-Regular.ttf);
+}
