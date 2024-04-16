@@ -19,7 +19,7 @@ export const getAllCategory = async()=>{
     const options = {
 	method: 'GET',
 	headers: {
-		'x-rapidapi-key': '6f92890519msh55bd3a5dfe2d7fbp138cd3jsn41f404fa60de',
+		'x-rapidapi-key': '9ac10b35a9mshaa5cf2f91b91a77p14ec67jsne84c61139ded',
 		'x-rapidapi-host': 'real-time-amazon-data.p.rapidapi.com'
 	}
 };
@@ -27,7 +27,7 @@ export const getAllCategory = async()=>{
     let data = res.json();
     return data;
 }
-
+document.querySelector(".carga").style.display = "block";
 export const getAllInicio = async()=>{
     let page = 2000
     page = Math.random()*(page/20);
@@ -41,5 +41,6 @@ export const getAllInicio = async()=>{
     };
     let res = await fetch(url, options);
     let data = res.json();
+    document.querySelector(".carga").style.display = "none";
     return data;
 }

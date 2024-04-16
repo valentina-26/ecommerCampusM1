@@ -27,40 +27,39 @@ export const galleryIndex = (res, category)=>{
 
 
 
-export const itemsCarrito = ()=>{
-    let contador = sessionStorage.length -2 ;
-    console.log(contador)
+export const itemsCarrito = () => {
+    let contador = sessionStorage.length - 1;
+    console.log(contador);
 
-    if (contador == 0){contador = 0}else{
+    if (contador < 0) contador = 0; // Aseguramos que el contador no sea negativo
+
     return /*html*/`
     <footer class="footer">
-    <ul class="footer__ul">
-        <li>
-            <a href="index.html">
-                <img src="storage/img/homeSelect.svg">
-            </a>
-        </li>
-        <li>
-            <a id ="carritolikes" href="views/detail.html">
-                <img src="storage/img/bag.svg">
-                <p id="index__counter">${contador}</p>
-                
-            </a>
-        </li>
-        <li>
-            <a href="views/checkout.html">
-                <img src="storage/img/heart.svg">
-            </a>
-        </li>
-        <li>
-            <a href="index.html">
-                <img src="storage/img/profile.svg">
-            </a>
-        </li>
-    </ul>
-</footer>`;
-}
-}
+        <ul class="footer__ul">
+            <li>
+                <a href="index.html">
+                    <img src="storage/img/homeSelect.svg">
+                </a>
+            </li>
+            <li>
+                <a id="carritolikes" href="views/detail.html">
+                    <img src="storage/img/bag.svg">
+                    <p id="index__counter">${contador}</p>
+                </a>
+            </li>
+            <li>
+                <a href="views/checkout.html">
+                    <img src="storage/img/heart.svg">
+                </a>
+            </li>
+            <li>
+                <a href="index.html">
+                    <img src="storage/img/profile.svg">
+                </a>
+            </li>
+        </ul>
+    </footer>`;
+};
 
 
 export const galleryCategory = ({data: {product_photos}} = res)=>{
