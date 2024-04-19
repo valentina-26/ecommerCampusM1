@@ -90,7 +90,7 @@
 
 .nav__ul{
     /* background:darkgray;  */
-    height: 50px;
+    height: 55px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -169,7 +169,7 @@
 .section__front__page > img:last-child{
     top:10px;
     right: 10px;
-    background: red;
+    /* background: red; */
     background:var(--color-1);
     border-radius: 100%;
     height: 25px;
@@ -213,7 +213,7 @@
 .main__article section:nth-child(4n+1),
 .main__article section:nth-child(4n+4){
     /* background: orange; */
-    height: 340px;
+    height: 380px;
 }
 .main__article section:nth-child(4n-1){
     /* background: violet; */
@@ -224,7 +224,7 @@
 .footer{
     /* background:red; */
     position: fixed;
-    bottom: 0;
+    bottom: 10px;
     width: 100%;
     padding: var(--space-layout-padding-lr);
     
@@ -239,15 +239,15 @@
     justify-content: space-evenly;
     align-items: center;
     border-radius: 40px;
-    box-shadow: 0px 0px 55px #fff, 0px 0px 55px #fff;
+    box-shadow: 0px 0px 55px 10px #fff, 
 }
 
 .footer__ul li{
     list-style: none;
     background:var(--color-1);
     border-radius: 100%;
-    height: 45px;
-    width: 45px;
+    height: 40px;
+    width: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -261,8 +261,3 @@
 .footer__ul li a img{
     object-fit:contain;
 }
-
-
-
-
-/* ------------------------------------------------------------- */
