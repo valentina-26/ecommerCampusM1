@@ -8,6 +8,9 @@
     --space-layout-padding-t:5px;
     --layout-img-wigth:100%;
     --layout-img-height:350px;
+
+    --layout-img-wigth-detail:100%;
+    --layout-img-height-detail:392px;
 }
 @font-face {
     font-family: "EncodeSans-Regular";
