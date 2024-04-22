@@ -160,6 +160,10 @@
     width: 25px;
 }
 
+.footer__ul li a span{
+    font-family: "EncodeSans-Medium";
+}
+
 .footer__ul li a sub{
     text-decoration: line-through;
 }

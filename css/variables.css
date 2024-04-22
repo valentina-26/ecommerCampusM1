@@ -11,6 +11,9 @@
 
     --layout-img-wigth-detail:100%;
     --layout-img-height-detail:392px;
+
+    --layout-image-width-checkout: 70px;
+    --layout-image-height-checkout: 70px;
 }
 @font-face {
     font-family: "EncodeSans-Regular";
