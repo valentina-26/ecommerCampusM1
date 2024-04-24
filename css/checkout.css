@@ -266,5 +266,6 @@ header{
 
 .footer__ul li a span{
     font-family: "EncodeSans-Medium";
+    color: var(--color-1);
 }
 

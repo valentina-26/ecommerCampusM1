@@ -1,8 +1,8 @@
 :root{
-    --color-1: #292526;
+    --color-1: #8E1F4C;
     --color-2: #1B2028;
     --color-3: #A4AAAD;
-    --color-4: #111111;
+    --color-4: #fff6ed;
     --color-5: #FFFFFF;
     --space-layout-padding-lr:10px;
     --space-layout-padding-t:5px;
@@ -16,7 +16,7 @@
     --layout-image-height-checkout: 70px;
 }
 @font-face {
-    font-family: "EncodeSans-Regular";
+    font-family: "EnecodeSans-Regular";
     src: url("../storage/font/encode-sans/EncodeSans-Regular.ttf");
 }
 @font-face {
