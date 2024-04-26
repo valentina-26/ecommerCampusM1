@@ -2,7 +2,7 @@
 *{
     padding: 0;
     margin: 0;
-    font-family: "EncodeSans-Regular";
+    font-family: "NotoSerif";
     box-sizing: border-box;
 }
 .header {
@@ -14,11 +14,11 @@
     align-items: center;
     height: 60px;
 }
-.header__information{
-    /* background: green; */
+.header__information p{
+    font-family: "NotoSerif";
 }
 .header__information span{
-    font-family: "EncodeSans-Bold";
+    font-family: "NotoSerif";
 }
 .header__login{
     /* background: violet; */
@@ -44,7 +44,10 @@
     /* background: yellow;  */
     position: relative;
 }
+
+
 .nav__search input{
+    font-family:"NotoSerif" ;
     outline: none;
     width: 260px;
     height: 45px;
@@ -181,13 +184,14 @@
 }
 
 .main__article section h5{
-    font-family:"EncodeSans-SemiBold";
+    font-family:"Sedan-Regular";
     color: var(--color-2);
     margin-bottom: 9px;
 }
 
 .main__article section small{
     color: var(--color-3);
+    font-family: "Sedan-Regular";
 }
 
 .main__article section h5,

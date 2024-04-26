@@ -96,6 +96,10 @@ header{
     object-fit: cover;
 }
 
+.product__custom span{
+    color: var(--color-2);
+}
+
 .product__select {
     display: flex;
     justify-content: space-evenly;
@@ -141,10 +145,10 @@ header{
 
 
 .dropdownbutton {
-    background-color: var(--color-3);
+    background-color: var(--color-6);
     border-radius: 5px;
     width: 100%;
-    color: var(--color-1);
+    /* color: var(--color-1); */
     padding: 16px;
     font-size: 16px;
     cursor: pointer;
