@@ -15,6 +15,11 @@ header{
 
 } 
 
+header h3{
+    color: var(--color-1);
+    font-family: "NotoSerif";
+}
+
 .main {
     /* background: red; */
     padding: var(--space-layout-padding-t);
@@ -67,16 +72,17 @@ header{
 
 .product__description h3{
     font-size: 1rem;
-    font-family: "EncodeSans-SemiBold";
+    font-family: "Sedan-Regular";
 }
 
 .product__description small{
     margin-top: 5px;
-    color: var(--color-3);
+    color: var(--color-1);
+    font-family:"Sedan-Regular" ;
 }
 
 .product__description span{
-    font-family: "EncodeSans-SemiBold";
+    font-family: "NotoSerif";
     position: absolute;
     bottom: 0;
     font-size: .9rem;
@@ -98,6 +104,7 @@ header{
 
 .product__custom span{
     color: var(--color-2);
+    font-family: "NotoSerif";
 }
 
 .product__select {
@@ -105,7 +112,7 @@ header{
     justify-content: space-evenly;
     align-items: center;
     background: var(--color-4);
-    color: var(--color-5);
+    color: var(--color-2);
     width: 90px;
     height: 28px;
     border-radius: 5px;
@@ -117,7 +124,7 @@ header{
 }
 
 .product__select span{
-    font-family: "EncodeSans-SemiBold";
+    font-family: "NotoSerif";
 }
 
 .section__shopping{
@@ -131,6 +138,7 @@ header{
 
 .shopping__title h3{
     color: var(--color-1);
+    font-family:"NotoSerif" ;
 }
 
 .section__card{
@@ -164,7 +172,8 @@ header{
 }
 
 .shoppingcard label{
-    font-family:"EncodeSans-SemiBold";
+    font-family:"NotoSerif";
+    color: var(--color-2);
 }
 
 
@@ -215,7 +224,8 @@ header{
     margin-top: 25px;
 } 
 .section__bill span{
-    font-family: "EncodeSans-SemiBold";
+    font-family: "NotoSerif";
+    color: var(--color-2);
 }
 
 .bill__total {
@@ -224,6 +234,12 @@ header{
     justify-content: space-between;
     margin-bottom: 15px;
     color: var(--color-2);
+    font-family: "NotoSerif";
+}
+
+.bill__total label{
+    color: var(--color-2);
+    font-family:"NotoSerif" ;
 }
 .bill__fee {
     /* background: violet; */
@@ -234,10 +250,20 @@ header{
     border-bottom-style: solid;
     border-bottom-color:var(--color-3)
 }
+
+.bill__fee label{
+    color: var(--color-2);
+    font-family:"NotoSerif" ;
+}
 .bill__subtotal {
     /* background: green; */
     justify-content: space-between;
     margin-bottom: 20px;
+}
+
+.bill__subtotal label{
+    color: var(--color-2);
+    font-family:"NotoSerif" ;
 }
 
 .footer__ul{
@@ -269,7 +295,7 @@ header{
 
 
 .footer__ul li a span{
-    font-family: "EncodeSans-Medium";
+    font-family: "NotoSerif";
     color: var(--color-1);
 }
 
