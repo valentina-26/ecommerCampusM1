@@ -124,15 +124,19 @@
     color: var(--color-1);
     background: var(--color-5);
     transition:all 0.5s linear;
-   overflow:hidden;
-   text-overflow: ellipsis;
-   white-space: nowrap;
+
 
 }
 
 .nav__ul li a:hover{
     filter: invert(1);
 
+}
+
+.nav__ul li a span{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 
