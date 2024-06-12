@@ -110,7 +110,7 @@
 }
 
 .nav__ul li a{
-    width: 105px;
+    width: 125px;
     height: 35px;
     font-family:"NotoSerif";
     /* background: orange; */
@@ -123,7 +123,10 @@
     border: 1px solid var(--color-3);
     color: var(--color-1);
     background: var(--color-5);
-    transition:all 0.5s linear
+    transition:all 0.5s linear;
+   overflow:hidden;
+   text-overflow: ellipsis;
+   white-space: nowrap;
 
 }
 
