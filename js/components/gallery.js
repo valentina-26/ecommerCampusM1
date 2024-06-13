@@ -1,17 +1,17 @@
-export const galleryIndex = (res)=>{
+export const galleryIndex = (res, category)=>{
     let {products} = res.data
     let plantilla = "";
     products.forEach((value,index) => {
         plantilla += /*html*/`
         <section>
            <div class="section__front_page">
-               <a href="views/detail.html?id">
+               <a href="views/detail.html?id=${value.asin}">
                    <img src="${value.product_photo}">
                </a>
                <img src="storage/img/heart.svg">
            </div>
            <h5>${value.product_title}</h5>
-           <small>${category}>
+           <small>${category}</small>
            <div class="section__price">
                <span>${value.product_price}</span>
                <div  class="price__score">
@@ -20,6 +20,7 @@ export const galleryIndex = (res)=>{
                </div>
            </div>
        </section>
+	
        `;
     });
     return plantilla
