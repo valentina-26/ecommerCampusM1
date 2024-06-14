@@ -159,7 +159,7 @@
 
 .footer{
     position: fixed;
-    bottom: -5px;
+    bottom: 10px;
     width: 100%;
     padding: var(--space-layout-padding-lr);
 }
