@@ -2,10 +2,12 @@ import { galleryCategory } from "./components/gallery.js";
 import { titleProductDetail } from "./components/section.js";
 import { getProductId } from "./module/detail.js";
 import { descriptionDetails } from "./components/description.js";
+import {Price} from "./components/price.js"
 
 let main__section_gallery = document.querySelector("#main__section__gallery");
 let main__section__title = document.querySelector("#main__section__title");
 let main__section__description = document.querySelector("#main__section__description");
+let main__section__price = document.querySelector(".footer__ul");
 
 
 addEventListener("DOMContentLoaded", async(e)=>{
@@ -17,20 +19,8 @@ addEventListener("DOMContentLoaded", async(e)=>{
     main__section_gallery.innerHTML = await galleryCategory(info);
     main__section__title.innerHTML = await titleProductDetail(info);
     main__section__description.innerHTML = await descriptionDetails(info);
+    main__section__price.innerHTML = await Price(info);
     
-    // let {
-    //     category_path,
-    //     about_product,
-    //     product_details,
-    //     product_information,
-    //     product_photos,
-    //     product_variations,
-    //     rating_distribution,
-    //     review_aspects,
-    //     ...dataUpdate
-    // } = data;
-    // console.log(dataUpdate);
-
     let decreaseButton = document.querySelector("#decreaseQuantity");
     let increaseButton = document.querySelector("#increaseQuantity");
     let quantitySpan = document.querySelector("#quantity");
