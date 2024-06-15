@@ -1,4 +1,5 @@
 export const descriptionDetails = async({data: dataUpdate} = res) => {
+    if (dataUpdate.product_description !== null){
     let DescriptionHTML = async() => {
         let description = await dataUpdate.product_description;
         let text= description;
@@ -9,6 +10,7 @@ export const descriptionDetails = async({data: dataUpdate} = res) => {
    
         return `${text}`;
     }
+
     
    
     
@@ -17,4 +19,5 @@ export const descriptionDetails = async({data: dataUpdate} = res) => {
             <p id = "informationProduct">${await DescriptionHTML()}</p>
     </article>
     `
+} else return null;
 };
