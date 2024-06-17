@@ -14,7 +14,7 @@ export const Price = async({data: dataUpdate} = res) => {
     <li>
         <a href="checkout.html">
             <img src="../storage/img/shopping-cart.svg">
-            <span>Add to card ${dataUpdate.product_price}<sub>${dataUpdate.product_original_price}</sub></del></span>
+            <span id ="precioTotal">Add to card ${dataUpdate.product_price}<sub>${dataUpdate.product_original_price}</sub></del></span>
         </a>
     </li>
     `

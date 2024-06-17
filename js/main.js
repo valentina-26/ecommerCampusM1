@@ -1,6 +1,6 @@
 import { menuListCategoryIndex } from "./components/menu.js";
 import { galleryIndex } from "./components/gallery.js";
-import { getAllProductName, getAllCategory } from "./module/app.js";
+import { getAllProductName, getAllCategory,getAllInicio } from "./module/app.js";
 
 
 
@@ -12,6 +12,9 @@ let nav__ul = document.querySelector(".nav__ul");
 addEventListener("DOMContentLoaded", async e=>{
     if(!localStorage.getItem("getAllCategory")) localStorage.setItem("getAllCategory", JSON.stringify(await getAllCategory()));
     nav__ul.innerHTML = await menuListCategoryIndex(JSON.parse(localStorage.getItem("getAllCategory")));  
+    let res = await getAllInicio()
+    main__article.innerHTML = galleryIndex (res,"fashion")
+    
 })
 
 
