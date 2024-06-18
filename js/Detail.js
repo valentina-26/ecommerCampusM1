@@ -115,6 +115,7 @@ addEventListener("DOMContentLoaded", async(e)=>{
             `}else{
                 quantitySpan.textContent = quantity + 1;
                 quantity = parseInt(quantitySpan.textContent);
+                console.log(quantity);
                 precioTotal.innerHTML = /*html*/`
                 <span id= "precioTotal">Add to Cart $${quantity * precioentero}</span>
                 `}
