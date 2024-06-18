@@ -120,4 +120,15 @@ addEventListener("DOMContentLoaded", async(e)=>{
                 `}
             }else return quantitySpan.textContent = quantity + 1;
 });
+
+let LeerMasButton = document.querySelector("#leerMasOption");
+    let informationProduct = document.querySelector("#informationProduct")
+
+    if(LeerMasButton){
+        LeerMasButton.addEventListener('click', async e => {
+            let description = info.data.product_description;
+            informationProduct.textContent = description;
+        });
+    };
+
 });

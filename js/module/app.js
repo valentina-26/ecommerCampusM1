@@ -19,7 +19,7 @@ export const getAllCategory = async()=>{
     const options = {
 	method: 'GET',
 	headers: {
-		'x-rapidapi-key': '1780a41306msh70037e7972db288p16453fjsn326530ce2cfd',
+		'x-rapidapi-key': 'e5400421b6msh3b3e4267bbd42f2p1a1273jsnef45d6a1c8b3',
 		'x-rapidapi-host': 'real-time-amazon-data.p.rapidapi.com'
 	}
 };
@@ -34,7 +34,7 @@ export const getAllInicio = async()=>{
     page = parseInt(Math.round(page));
     if (!page) page = 1;
     console.log("Esperando .......");
-    const url = `https://real-time-amazon-data.p.rapidapi.com/search?query=make%20up&page${page}=1&country=US&sort_by=NEWEST&category_id=fashion&product_condition=NEW`;
+    const url = `https://real-time-amazon-data.p.rapidapi.com/search?query=clothes&page=${page}1&country=US&sort_by=RELEVANCE&category_id=fashion&product_condition=ALL`;
     const options = {
         method: 'GET',
         headers

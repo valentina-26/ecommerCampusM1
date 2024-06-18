@@ -54,11 +54,13 @@ header h3{
 }
 
 .product_image img{
-    width: var(--layout-image-width-checkout);
-    height: var(--layout-image-height-checkout);
+    /* width: var(--layout-image-width-checkout);
+    height: var(--layout-image-height-checkout); */
     border-radius: 15px;
     object-fit: cover;
     object-position: 0 0px;
+    width: 70px;
+    height: 70px;
 
 }
 
@@ -103,7 +105,7 @@ header h3{
 }
 
 .product__custom span{
-    color: var(--color-2);
+    color: var(--color-5);
     font-family: "NotoSerif";
 }
 
@@ -296,5 +298,5 @@ header h3{
 
 .footer__ul li a span{
     font-family: "NotoSerif";
-    color: var(--color-1);
+    color: var(--color-5);
 }

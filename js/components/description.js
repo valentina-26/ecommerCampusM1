@@ -5,7 +5,7 @@ export const descriptionDetails = async({data: dataUpdate} = res) => {
         let text= description;
 
         if (description.length > 150) {
-            text = description.substring(0, 150) + '... <strong id = "leerMasOption"> Leer mÃ¡s.</strong>';
+            text = description.substring(0, 150) + '... <strong id = "leerMasOption"> Read More.</strong>';
         }
    
         return `${text}`;
