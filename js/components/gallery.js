@@ -40,7 +40,7 @@ export const galleryCategory = ({data: {product_photos}} = res)=>{
         </article>`;
 }
 
-export const galleryCheckout = ()=>{
+export const galleryCheckout = async()=>{
     let keys = Object.keys(sessionStorage)
     let plantilla = "";
     keys.forEach(key=>{
@@ -55,12 +55,12 @@ export const galleryCheckout = ()=>{
             </div>
             <div class="product__description">
                 <h3>${(value.product_title).substring(0, 15)}...</h3>
-                <small> ⭐${value.product_star_rating ? value.product_star_rating : "*No Ratings*"}</small>
+                <small>⭐ ${value.product_star_rating ? value.product_star_rating : "*No Ratings*"}</small>
                 <span>${value.product_price}</span>
             </div>
             <div class="product__custom">
                 <img src="../storage/img/option.svg">
-                <div class="product__select">
+                <div id =   "precio" class="product__select">
                 <img src="../storage/img/minus.svg" id= "decreaseQuantity">
                 <span id ="quantity">1</span>
                 <img src="../storage/img/plus.svg" id= "increaseQuantity">
