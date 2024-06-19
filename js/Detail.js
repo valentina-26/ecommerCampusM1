@@ -68,11 +68,24 @@ addEventListener("DOMContentLoaded", async(e)=>{
     main__section__title.innerHTML = await titleProductDetail(info);
     main__section__description.innerHTML = await descriptionDetails(info);
     main__section__price.innerHTML = await Price(info);
+
+
+
+    main__section__price.addEventListener("click", async (e) =>{
+        let info = JSON.parse(localStorage.getItem(id));
+        info["checkout"] = true
+        console.log(info);
+        sessionStorage.setItem(id, JSON.stringify(info));
+    })
     
     let decreaseButton = document.querySelector("#decreaseQuantity");
     let increaseButton = document.querySelector("#increaseQuantity");
     let quantitySpan = document.querySelector("#quantity");
     let precioTotal = document.querySelector("#precioTotal")
+
+
+  
+    
 
     decreaseButton.addEventListener('click', async e => {
     let quantity = parseInt(quantitySpan.textContent);

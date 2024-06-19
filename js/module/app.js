@@ -19,7 +19,7 @@ export const getAllCategory = async()=>{
     const options = {
 	method: 'GET',
 	headers: {
-		'x-rapidapi-key': 'e5400421b6msh3b3e4267bbd42f2p1a1273jsnef45d6a1c8b3',
+		'x-rapidapi-key': 'e397662634msh8dede9339d25c21p1ec267jsn148a7706fb02',
 		'x-rapidapi-host': 'real-time-amazon-data.p.rapidapi.com'
 	}
 };
