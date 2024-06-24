@@ -25,7 +25,13 @@ export const galleryIndex = (res, category)=>{
     return plantilla
 }
 
+
+
 export const itemsCarrito = ()=>{
+    let contador = sessionStorage.length -2 ;
+    console.log(contador)
+
+    if (contador == 0){contador = 0}else{
     return /*html*/`
     <footer class="footer">
     <ul class="footer__ul">
@@ -37,6 +43,8 @@ export const itemsCarrito = ()=>{
         <li>
             <a id ="carritolikes" href="views/detail.html">
                 <img src="storage/img/bag.svg">
+                <p id="index__counter">${contador}</p>
+                
             </a>
         </li>
         <li>
@@ -51,6 +59,7 @@ export const itemsCarrito = ()=>{
         </li>
     </ul>
 </footer>`;
+}
 }
 
 
