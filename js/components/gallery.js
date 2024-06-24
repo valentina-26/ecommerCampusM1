@@ -35,7 +35,7 @@ export const itemsCarrito = ()=>{
             </a>
         </li>
         <li>
-            <a href="views/detail.html">
+            <a id ="carritolikes" href="views/detail.html">
                 <img src="storage/img/bag.svg">
             </a>
         </li>
