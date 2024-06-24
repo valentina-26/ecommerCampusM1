@@ -25,6 +25,35 @@ export const galleryIndex = (res, category)=>{
     return plantilla
 }
 
+export const itemsCarrito = ()=>{
+    return /*html*/`
+    <footer class="footer">
+    <ul class="footer__ul">
+        <li>
+            <a href="index.html">
+                <img src="storage/img/homeSelect.svg">
+            </a>
+        </li>
+        <li>
+            <a href="views/detail.html">
+                <img src="storage/img/bag.svg">
+            </a>
+        </li>
+        <li>
+            <a href="views/checkout.html">
+                <img src="storage/img/heart.svg">
+            </a>
+        </li>
+        <li>
+            <a href="index.html">
+                <img src="storage/img/profile.svg">
+            </a>
+        </li>
+    </ul>
+</footer>`;
+}
+
+
 export const galleryCategory = ({data: {product_photos}} = res)=>{
     return /*html*/`
         <article class="article__product">
@@ -45,7 +74,6 @@ export const galleryCheckout = async()=>{
     let plantilla = "";
     keys.forEach(key=>{
         let diccionarios = JSON.parse(sessionStorage.getItem(key));
-        console.log(diccionarios)
         if(diccionarios.checkout){
             let value = diccionarios.data;
             plantilla += /*html*/`
@@ -56,7 +84,7 @@ export const galleryCheckout = async()=>{
             <div class="product__description">
                 <h3>${(value.product_title).substring(0, 15)}...</h3>
                 <small>⭐ ${value.product_star_rating ? value.product_star_rating : "*No Ratings*"}</small>
-                <span>${value.product_price}</span>
+                <span id ="precio">${value.product_price}</span>
             </div>
             <div class="product__custom">
                 <img src="../storage/img/option.svg">
@@ -76,15 +104,15 @@ return plantilla;
 export const galleryBill = async({ data:dataUpdate } = res)=>{
     return /*html*/`
     <div class="bill__total">
-    <label>Total(9 items)</label>
-    <span>272.800</span>
+    <label id= "Totalitems">Total(9 items)</label>
+    <span id ="spanPrecio">272.800</span>
 </div>
 <div class="bill__fee">
     <label>Shipping Fee</label>
     <span>0.00</span>
 </div>
 <div class="bill__subtotal">
-    <label>Sub Total</label>
-    <span>272.800</span>
+    <label >Sub Total</label>
+    <span id= "subPrecio">272.800</span>
 </div>`;
     }
