@@ -34,7 +34,7 @@ export const getAllInicio = async()=>{
     page = parseInt(Math.round(page));
     if (!page) page = 1;
     console.log("Esperando .......");
-    const url = `https://real-time-amazon-data.p.rapidapi.com/deal-products?country=US&sort_by=FEATURED&page=${page}`;
+    const url = `https://real-time-amazon-data.p.rapidapi.com/search?query=clothes&page=${page}1&country=US&sort_by=RELEVANCE&category_id=fashion&product_condition=ALL`;
     const options = {
         method: 'GET',
         headers
