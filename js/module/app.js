@@ -15,11 +15,11 @@ export const getAllProductName = async({search:text, id:idCategory})=>{
 
 export const getAllCategory = async()=>{
     console.log("Esperando .......");
-    const url = `https://real-time-amazon-data.p.rapidapi.com/product-category-list?country=US`;
+    const url = `https://real-time-amazon-data.p.rapidapi.com/deal-products?country=US&sort_by=FEATURED&page=1'`;
     const options = {
 	method: 'GET',
 	headers: {
-		'x-rapidapi-key': '9420ab8194msha2fd15fd05d5419p1b198djsn66b61560e711',
+		'x-rapidapi-key': '1fe3d58549mshc026dc0b3248a3ep1d25fbjsn46d9483a5513',
 		'x-rapidapi-host': 'real-time-amazon-data.p.rapidapi.com'
 	}
 };
@@ -34,7 +34,7 @@ export const getAllInicio = async()=>{
     page = parseInt(Math.round(page));
     if (!page) page = 1;
     console.log("Esperando .......");
-    const url = `https://real-time-amazon-data.p.rapidapi.com/search?query=clothes&page=${page}1&country=US&sort_by=RELEVANCE&category_id=fashion&product_condition=ALL`;
+    const url = `https://real-time-amazon-data.p.rapidapi.com/deal-products?country=US&sort_by=FEATURED&page=${page}`;
     const options = {
         method: 'GET',
         headers
