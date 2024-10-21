@@ -19,19 +19,16 @@
     --layout-imagen-height-checkout: 70px;
 
 }
-@font-face {
-    font-family: "EncodeSans-Regular";
-    src: url("../storage/font/encode-sans/EncodeSans-Regular.ttf");
-}
-@font-face {
+
+/* @font-face {
     font-family: "EncodeSans-Medium";
     src: url("../storage/font/encode-sans/EncodeSans-Medium.ttf");
-}
-@font-face {
+} */
+/* @font-face {
     font-family: "EncodeSans-SemiBold";
     src: url("../storage/font/encode-sans/EncodeSans-SemiBold.ttf");
-}
-@font-face {
+} */
+/* @font-face {
     font-family: "EncodeSans-Bold";
     src: url("../storage/font/encode-sans/EncodeSans-Bold.ttf");
-}
+} */
